@@ -1,0 +1,30 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="58" fill="#1a73e8" stroke="#ffffff" stroke-width="4"/>
+  
+  <!-- Brain icon stylized -->
+  <g transform="translate(64, 64)">
+    <!-- Main brain shape -->
+    <ellipse cx="0" cy="-5" rx="35" ry="25" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Brain folds/details -->
+    <path d="M -25 -15 Q -15 -25 0 -15 Q 15 -25 25 -15" 
+          stroke="#1a73e8" stroke-width="3" fill="none"/>
+    <path d="M -20 -5 Q -10 -15 5 -5 Q 20 -15 25 -5" 
+          stroke="#1a73e8" stroke-width="2" fill="none"/>
+    <path d="M -25 5 Q -10 -5 5 5 Q 20 -5 25 5" 
+          stroke="#1a73e8" stroke-width="2" fill="none"/>
+    
+    <!-- Center divider -->
+    <line x1="0" y1="-25" x2="0" y2="15" stroke="#1a73e8" stroke-width="2"/>
+    
+    <!-- Small AI dots -->
+    <circle cx="-15" cy="-8" r="2" fill="#1a73e8"/>
+    <circle cx="15" cy="-8" r="2" fill="#1a73e8"/>
+    <circle cx="-8" cy="5" r="1.5" fill="#1a73e8"/>
+    <circle cx="8" cy="5" r="1.5" fill="#1a73e8"/>
+  </g>
+  
+  <!-- Text indicator -->
+  <text x="64" y="105" text-anchor="middle" fill="#1a73e8" font-family="Arial" font-size="12" font-weight="bold">AI</text>
+</svg>

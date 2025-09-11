@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 400px;
+      min-height: 500px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 12px;
+    }
+    
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a73e8;
+    }
+    
+    .loading {
+      display: none;
+      text-align: center;
+      color: #666;
+      padding: 20px;
+    }
+    
+    .summary-section {
+      margin-bottom: 20px;
+    }
+    
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #333;
+      font-size: 14px;
+    }
+    
+    .summary-content {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 12px;
+      line-height: 1.4;
+      font-size: 13px;
+      color: #333;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    
+    .questions-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .questions-list li {
+      background: #e8f0fe;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: #1a73e8;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .questions-list li:hover {
+      background: #d2e3fc;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    
+    .btn {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #dadce0;
+      border-radius: 6px;
+      background: white;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+    
+    .btn:hover {
+      background: #f8f9fa;
+      border-color: #1a73e8;
+    }
+    
+    .btn.primary {
+      background: #1a73e8;
+      color: white;
+      border-color: #1a73e8;
+    }
+    
+    .btn.primary:hover {
+      background: #1557b0;
+    }
+    
+    .error {
+      background: #fce8e6;
+      border: 1px solid #f9ab00;
+      border-radius: 6px;
+      padding: 12px;
+      color: #d93025;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+    
+    .notes-section {
+      border-top: 1px solid #e0e0e0;
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+    
+    .notes-list {
+      max-height: 120px;
+      overflow-y: auto;
+    }
+    
+    .note-item {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 8px;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+    
+    .note-time {
+      color: #666;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">🧠 Smart Research Assistant</div>
+  </div>
+  
+  <div class="action-buttons">
+    <button id="summarizeBtn" class="btn primary">Summarize Page</button>
+    <button id="questionsBtn" class="btn">Generate Questions</button>
+  </div>
+  
+  <div id="loading" class="loading">
+    <div>🤖 AI is thinking...</div>
+  </div>
+  
+  <div id="error" class="error" style="display: none;"></div>
+  
+  <div id="summarySection" class="summary-section" style="display: none;">
+    <div class="section-title">📄 Page Summary</div>
+    <div id="summaryContent" class="summary-content"></div>
+  </div>
+  
+  <div id="questionsSection" class="summary-section" style="display: none;">
+    <div class="section-title">🤔 Research Questions</div>
+    <ul id="questionsList" class="questions-list"></ul>
+  </div>
+  
+  <div class="notes-section">
+    <div class="section-title">📝 Research Notes</div>
+    <button id="saveNoteBtn" class="btn" style="width: 100%; margin-bottom: 8px;">Save Current Research</button>
+    <div id="notesList" class="notes-list"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
