@@ -1,139 +1,201 @@
 # 🧠 Smart Research Assistant
 
-**An intelligent Chrome extension that enhances your research workflow using Google Chrome's built-in AI APIs.**
+**An advanced Chrome extension that revolutionizes research workflows using Google Chrome's built-in AI APIs.**
+
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com)
+[![AI Powered](https://img.shields.io/badge/AI-Powered-00D4FF?style=for-the-badge&logo=openai&logoColor=white)](https://ai.google.dev)
+[![Built with Chrome AI](https://img.shields.io/badge/Built%20with-Chrome%20AI-EA4335?style=for-the-badge&logo=google&logoColor=white)](https://developer.chrome.com/docs/ai/)
 
 ## 🚀 Features
 
-### Core Functionality
-- **🔍 Intelligent Page Summarization**: Automatically extract key insights from any web page using Chrome's Summarizer API
-- **❓ Research Question Generation**: Generate thoughtful follow-up questions to deepen your research using the Prompt API
-- **📝 Research Notes**: Save and organize your research findings with timestamps
-- **🔗 Quick Search Integration**: Click generated questions to search Google instantly
-- **🔒 Privacy-First**: All AI processing happens locally on your device
+### 🤖 Advanced AI Capabilities
+- **📄 Intelligent Summarization**: Extract key insights from any webpage using Chrome's Summarizer API
+- **🤔 Research Questions**: Generate thoughtful follow-up questions using the Prompt API  
+- **✨ Content Rewriting**: Rephrase summaries in different styles using the Rewriter API
+- **🎯 Smart Highlighting**: Visually highlight key terms from summaries on the original page
 
-### Key Benefits
-- **⚙️ Cost-Free**: No API keys or server costs required
-- **🔒 Complete Privacy**: Your data never leaves your device
-- **⚡ Offline Capable**: Works without internet connection once loaded
-- **🎯 Context-Aware**: Understands page content and generates relevant insights
+### 🛠 Professional Research Tools
+- **📤 Export Functions**: Export research to Markdown format or copy to clipboard
+- **📚 Research Library**: Save and organize research notes with timestamps
+- **⌨️ Keyboard Shortcuts**: Power user shortcuts (Alt+S, Alt+Q, Alt+H)
+- **🔍 Visual Feedback**: Professional UI with loading animations and status indicators
 
-## 📊 Chrome Built-in AI APIs Used
+### 🔒 Privacy & Performance
+- **Local AI Processing**: All AI operations run locally on your device
+- **Zero Data Collection**: No user data is collected or transmitted
+- **Offline Capable**: Works without internet once AI models are downloaded
+- **Cost-Free Operation**: No API keys or server costs required
 
-1. **Summarizer API**: Generates concise summaries of web page content
-2. **Prompt API (Language Model)**: Creates relevant research questions based on content
-3. **Storage API**: Saves research notes locally
+## 🎯 Built for Google Chrome Built-in AI Challenge 2025
 
-## 🛠 Installation
+This extension showcases the power of Chrome's built-in AI APIs to create a seamless, privacy-focused research experience that was previously impossible on the web.
 
-### For Development/Testing
+**Target Category:** Most Helpful - Chrome Extension ($14,000)
 
-1. Clone or download this repository
-2. Open Chrome and navigate to `chrome://extensions/`
+## 🛠 Installation & Setup
+
+### Prerequisites
+1. **Chrome Canary** or **Chrome Dev** (required for built-in AI APIs)
+2. **Chrome Built-in AI Early Preview Program** enrollment
+3. Enable required flags in `chrome://flags/`:
+   - `#prompt-api-for-gemini-nano`
+   - `#summarization-api-for-gemini-nano`
+   - `#rewriter-api-for-gemini-nano` (optional)
+   - `#writer-api-for-gemini-nano` (optional)
+
+### Installation Steps
+1. Download or clone this repository
+2. Open Chrome Canary and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top right
 4. Click "Load unpacked" and select the extension folder
-5. Make sure you have Chrome Built-in AI enabled:
-   - Join the [Chrome Built-in AI Early Preview Program](https://docs.google.com/forms/d/e/1FAIpQLSfZXeiwj9KO9jMctffHPym88ln12xNWCrVkMY_u06WfSTulQg/viewform)
-   - Enable the necessary flags in `chrome://flags/`
+5. The 🧠 icon should appear in your Chrome toolbar
 
-### Icon Setup
-Open `icons/create-icons.html` in your browser and download the generated icon files to the `icons/` directory.
+## 🎮 How to Use
 
-## 🎯 How to Use
-
+### Basic Workflow
 1. **Navigate** to any article or webpage you want to research
-2. **Click** the Smart Research Assistant icon in your Chrome toolbar
-3. **Summarize**: Click "Summarize Page" to get key insights
-4. **Explore**: Click "Generate Questions" to get research questions
-5. **Save**: Click "Save Current Research" to store your findings
-6. **Follow Up**: Click any generated question to search Google
+2. **Click** the Smart Research Assistant icon (🧠) in your toolbar
+3. **Summarize**: Click "📄 Summarize" to get AI-generated key insights
+4. **Explore**: Click "🤔 Questions" to generate follow-up research questions
+5. **Enhance**: Click "✨ Rewrite" to get alternative phrasings
+6. **Save**: Click "💾 Save Current Research" to store your findings
 
-## 🏆 Hackathon Submission
+### Advanced Features
+- **🎯 Highlight**: Click to highlight key terms from your summary on the webpage
+- **📄 Export**: Export individual research sessions to Markdown
+- **📦 Export All**: Export your entire research library
+- **📋 Copy**: Copy research to clipboard for use in other applications
 
-This extension was built for the **Google Chrome Built-in AI Challenge 2025**.
+### Keyboard Shortcuts
+- **Alt + S**: Quick summarize current page
+- **Alt + Q**: Generate research questions
+- **Alt + H**: Clear page highlights
 
-### Problem Solved
-Research workflows are often fragmented and inefficient. Users typically:
-- Read content without extracting key insights
-- Miss important follow-up questions
-- Lose track of their research progress
-- Rely on external AI services that compromise privacy
-
-### Solution
-Smart Research Assistant streamlines research by:
-- Automatically extracting key information from any webpage
-- Suggesting relevant follow-up questions
-- Maintaining a research history
-- Operating completely offline and privately
-
-### Target Prize Category
-**Most Helpful - Chrome Extension** ($14,000)
-
-This extension meaningfully improves the common research workflow by making it more systematic, thorough, and privacy-conscious.
-
-## 🛡 Privacy & Security
-
-- **Local Processing**: All AI operations run locally using Chrome's built-in models
-- **No Data Collection**: No user data is collected or transmitted
-- **Offline Capable**: Works without internet connection
-- **Open Source**: Full transparency with open source code
-
-## 🧪 Technical Architecture
+## 🏗 Technical Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │   Content       │    │   Background     │    │   Popup UI      │
 │   Script        │    │   Service        │    │                 │
 │                 │    │                  │    │                 │
-│ • Extract page  │◄──►│ • AI API calls   │◄──►│ • User controls │
-│   content       │    │ • Summarizer     │    │ • Display       │
-│ • Clean text    │    │ • Prompt API     │    │   results       │
-│                 │    │ • Error handling │    │ • Save notes    │
+│ • Extract page  │◄──►│ • Message relay  │◄──►│ • User controls │
+│   content       │    │ • Error handling │    │ • Display       │
+│ • AI processing │    │ • Tab management │    │   results       │
+│ • Highlighting  │    │                  │    │ • Export tools  │
+│ • Shortcuts     │    │                  │    │ • Note storage  │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
                               │
                               ▼
-                    ┌─────────────────┐
-                    │   Chrome APIs   │
-                    │                 │
-                    │ • Summarizer    │
-                    │ • Language Model│
-                    │ • Storage       │
-                    └─────────────────┘
+                    ┌─────────────────────┐
+                    │   Chrome Built-in   │
+                    │       AI APIs       │
+                    │                     │
+                    │ • Summarizer API    │
+                    │ • Prompt API        │
+                    │ • Rewriter API      │
+                    │ • Storage API       │
+                    └─────────────────────┘
 ```
 
-## 🔧 Development
+## 🎨 Chrome AI APIs Used
 
-### Prerequisites
-- Chrome Canary or Chrome Dev with AI APIs enabled
-- Access to Chrome Built-in AI Early Preview Program
+| API | Purpose | Status |
+|-----|---------|--------|
+| **Summarizer API** | Generate intelligent page summaries | ✅ Core Feature |
+| **Prompt API** | Create contextual research questions | ✅ Core Feature |
+| **Rewriter API** | Rephrase content in different styles | ✅ Enhancement |
+| **Writer API** | Format and enhance research notes | ✅ Enhancement |
+| **Storage API** | Local research note persistence | ✅ Core Feature |
+
+## 🔧 Development
 
 ### File Structure
 ```
 smart-research-assistant/
-├── manifest.json          # Extension configuration
-├── popup.html            # Main UI interface
-├── popup.js              # UI logic and event handling
-├── content.js            # Page content extraction
-├── background.js         # AI API integration
-├── icons/                # Extension icons
-│   └── create-icons.html # Icon generation utility
-└── README.md             # Documentation
+├── manifest.json          # Extension configuration (v2.0.0)
+├── popup.html             # Main UI interface with enhanced styling
+├── popup.js               # UI logic and feature implementation
+├── content.js             # AI processing and page interaction
+├── background.js          # Message routing and tab management  
+├── icons/                 # Extension icons (16px, 48px, 128px)
+│   ├── icon16.png
+│   ├── icon48.png
+│   └── icon128.png
+├── LICENSE                # MIT License
+└── README.md              # This file
 ```
 
-### Testing
-1. Load the extension in Chrome
-2. Visit a content-rich webpage (news articles work great)
-3. Click the extension icon
-4. Test summarization and question generation features
-5. Verify notes saving and retrieval
+### Key Technologies
+- **Vanilla JavaScript**: No external dependencies for maximum performance
+- **Chrome Extension Manifest V3**: Modern extension architecture
+- **Chrome Built-in AI APIs**: Gemini Nano integration
+- **CSS Grid & Flexbox**: Responsive, professional UI design
+- **Local Storage**: Privacy-focused data persistence
 
-## 📄 License
+## 🎯 Problem Solved
 
-MIT License - Feel free to use and modify!
+### Before Smart Research Assistant
+- ❌ Passive reading without extracting key insights
+- ❌ Missing important follow-up questions  
+- ❌ Losing track of research progress
+- ❌ Relying on external AI services (privacy & cost concerns)
+- ❌ Fragmented research workflows across multiple tools
+
+### After Smart Research Assistant  
+- ✅ **Systematic research workflow** with AI-powered insights
+- ✅ **Intelligent question generation** for deeper exploration
+- ✅ **Visual content highlighting** shows what AI found important
+- ✅ **Complete privacy** with local AI processing
+- ✅ **Seamless integration** within existing browsing habits
+- ✅ **Professional export capabilities** for academic/professional use
+
+## 🏆 Competition Impact
+
+**Why this wins "Most Helpful Chrome Extension":**
+1. **Meaningful Workflow Improvement**: Transforms how millions research online
+2. **Scalable Impact**: Works for students, professionals, journalists, researchers
+3. **Innovative Chrome AI Usage**: Showcases multiple APIs working together
+4. **Privacy Leadership**: Demonstrates advantages of local AI processing
+5. **Professional Polish**: Production-ready UX and feature completeness
+
+## 📊 Performance & Privacy
+
+### Performance Benefits
+- **Offline capable** once AI models are downloaded
+- **Zero API costs** - no external service dependencies  
+- **Fast processing** with local Gemini Nano models
+- **Minimal memory footprint** with efficient JavaScript
+
+### Privacy Advantages
+- **No data collection** - everything stays on your device
+- **No external API calls** - complete data sovereignty
+- **Local AI processing** - your research never leaves your computer
+- **Open source transparency** - full code visibility
 
 ## 🤝 Contributing
 
-This is a hackathon project, but feedback and suggestions are welcome! Please open issues for bugs or feature requests.
+This project was built for the Google Chrome Built-in AI Challenge 2025. While it's a hackathon submission, we welcome feedback and suggestions!
+
+### Potential Enhancements
+- Multi-language support using Chrome's Translator API
+- Research theme categorization and tagging
+- Citation generation and source verification
+- Integration with popular note-taking applications
+- Advanced export formats (PDF, DOCX, etc.)
+
+## 📄 License
+
+MIT License - See [LICENSE](LICENSE) file for details.
+
+## 🌟 Acknowledgments
+
+- **Google Chrome Team** for pioneering built-in AI APIs
+- **Chrome Built-in AI Early Preview Program** for API access
+- **Gemini Nano** for powering local AI capabilities
+- **Open Source Community** for inspiration and best practices
 
 ---
 
 **Built for Google Chrome Built-in AI Challenge 2025** 🚀
+
+*Transforming research workflows with privacy-focused, locally-processed AI.*
