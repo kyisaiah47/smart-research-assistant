@@ -25,9 +25,18 @@ logs/
 # Node modules (if any)
 node_modules/
 
-# Generated icons (will be created manually)
-icons/*.png
-
 # Build artifacts
 dist/
 build/
+
+# Development files - DO NOT INCLUDE IN HACKATHON
+DEMO-SCRIPT.md
+FINAL-CHECKLIST.md
+SUBMISSION.md
+TESTING.md
+demo-instructions.md
+create-icons.js
+create-placeholder-icons.html
+*-checklist.md
+*-script.md
+*-instructions.md
