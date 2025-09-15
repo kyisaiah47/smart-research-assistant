@@ -6,6 +6,9 @@
 [![AI Powered](https://img.shields.io/badge/AI-Powered-00D4FF?style=for-the-badge&logo=openai&logoColor=white)](https://ai.google.dev)
 [![Built with Chrome AI](https://img.shields.io/badge/Built%20with-Chrome%20AI-EA4335?style=for-the-badge&logo=google&logoColor=white)](https://developer.chrome.com/docs/ai/)
 
+[![YouTube Demo](https://img.shields.io/badge/▶️%20Watch%20on%20YouTube-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=CrFsx6nY4WU)
+[![Watch the demo](https://img.youtube.com/vi/CrFsx6nY4WU/maxresdefault.jpg)](https://www.youtube.com/watch?v=CrFsx6nY4WU)
+
 ## 🚀 Features
 
 ### 🤖 Advanced AI Capabilities
