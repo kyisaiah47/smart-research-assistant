@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.png" alt="banner" width="100%" />
+
 # 🔬 Smart Research Assistant
 
 **AI-powered research in your browser — summarize, question, highlight, and export with full privacy**
